@@ -1,0 +1,141 @@
+Here's a curated list of **top, most-used, and important Linux commands** for **DevOps engineers**. These are essential for automation, CI/CD, configuration management, containerization, monitoring, networking, and system troubleshooting.
+
+---
+
+### 🔧 **System Monitoring & Resource Usage**
+
+| Command        | Description                                                   |
+| -------------- | ------------------------------------------------------------- |
+| `top` / `htop` | Real-time system resource usage (CPU, memory, processes)      |
+| `vmstat`       | Memory, CPU, and I/O statistics                               |
+| `free -m`      | Show memory usage in MB                                       |
+| `df -h`        | Disk usage in human-readable format                           |
+| `du -sh *`     | Size of files and directories                                 |
+| `uptime`       | System uptime and load averages                               |
+| `iostat`       | CPU and disk I/O stats                                        |
+| `sar`          | Collect, report, or save system activity (requires `sysstat`) |
+
+---
+
+### 📁 **File Management**
+
+| Command                        | Description                            |
+| ------------------------------ | -------------------------------------- |
+| `ls -l`                        | List files with details                |
+| `cd`                           | Change directory                       |
+| `cp`, `mv`, `rm`               | Copy, move, delete files/directories   |
+| `find /path -name "*.log"`     | Find files by name                     |
+| `grep -i "error" filename.log` | Search for patterns in files           |
+| `tail -f file.log`             | Live view of log file                  |
+| `chmod`, `chown`               | Change file permissions or ownership   |
+| `tar -czf archive.tar.gz dir/` | Create a tar.gz archive                |
+| `scp`, `rsync`                 | Secure copy/sync files between systems |
+
+---
+
+### 🔍 **Networking**
+
+| Command                        | Description                                 |
+| ------------------------------ | ------------------------------------------- |
+| `ip a` / `ifconfig`            | Show network interfaces                     |
+| `ping domain.com`              | Check network connectivity                  |
+| `netstat -tulnp` / `ss -tulnp` | Show listening ports and processes          |
+| `traceroute`                   | Trace network hops                          |
+| `dig`, `nslookup`              | DNS queries                                 |
+| `curl`, `wget`                 | HTTP requests (API testing, file downloads) |
+| `telnet host port`             | Test open ports                             |
+| `iptables` / `ufw`             | Firewall configuration                      |
+
+---
+
+### ⚙️ **Process & Service Management**
+
+| Command                       | Description                  |
+| ----------------------------- | ---------------------------- |
+| `ps aux`                      | View all running processes   |
+| `kill`, `killall`             | Terminate processes          |
+| `systemctl status <service>`  | Check systemd service status |
+| `systemctl restart <service>` | Restart a service            |
+| `journalctl -xe`              | View system logs             |
+| `service <name> status`       | Legacy service manager       |
+
+---
+
+### 🐳 **Container & Orchestration (Docker + Kubernetes)**
+
+| Command                            | Description                |
+| ---------------------------------- | -------------------------- |
+| `docker ps -a`                     | List all Docker containers |
+| `docker images`                    | List Docker images         |
+| `docker exec -it <container> bash` | Access container shell     |
+| `docker logs <container>`          | View container logs        |
+| `kubectl get pods`                 | List Kubernetes pods       |
+| `kubectl describe pod <name>`      | Details of a specific pod  |
+| `kubectl logs <pod>`               | Logs of a pod              |
+| `kubectl apply -f file.yaml`       | Apply K8s config           |
+| `kubectl exec -it <pod> -- bash`   | Shell into a pod           |
+
+---
+
+### 📦 **Package Management**
+
+| Command                       | Description                      |
+| ----------------------------- | -------------------------------- |
+| `apt`, `yum`, `dnf`, `zypper` | Install packages based on distro |
+| `apt install <pkg>`           | Install package (Debian/Ubuntu)  |
+| `yum install <pkg>`           | Install package (RHEL/CentOS)    |
+| `dpkg -i package.deb`         | Install `.deb` file              |
+| `rpm -ivh package.rpm`        | Install `.rpm` file              |
+
+---
+
+### 🔐 **SSH & User Management**
+
+| Command                                    | Description                   |
+| ------------------------------------------ | ----------------------------- |
+| `ssh user@host`                            | Connect to remote host        |
+| `ssh-keygen`                               | Generate SSH keys             |
+| `ssh-copy-id user@host`                    | Copy SSH public key           |
+| `adduser` / `useradd`, `usermod`, `passwd` | User and password management  |
+| `sudo`                                     | Execute commands as superuser |
+
+---
+
+### ⚙️ **Automation & Scripting**
+
+| Command              | Description              |
+| -------------------- | ------------------------ |
+| `crontab -e`         | Edit user cron jobs      |
+| `at`, `batch`        | One-time task scheduling |
+| `bash script.sh`     | Run shell script         |
+| `chmod +x script.sh` | Make script executable   |
+
+---
+
+### 🧪 **Version Control (Git)**
+
+| Command               | Description       |
+| --------------------- | ----------------- |
+| `git clone`           | Clone repository  |
+| `git status`          | Check repo status |
+| `git pull`            | Update local repo |
+| `git commit -m "msg"` | Commit changes    |
+| `git push`            | Push to remote    |
+
+---
+
+### 🌍 **Cloud & DevOps Tools (Bonus)**
+
+| Tool/Command       | Description                |
+| ------------------ | -------------------------- |
+| `terraform`        | Infrastructure as Code     |
+| `ansible-playbook` | Run Ansible automation     |
+| `helm`             | Kubernetes package manager |
+| `aws`              | AWS CLI                    |
+| `az`               | Azure CLI                  |
+| `gcloud`           | GCP CLI                    |
+| `jenkins-cli`      | Jenkins automation         |
+
+---
+
+Would you like a **cheat sheet PDF** or a **bash script using these commands** for quick setup?
