@@ -8,8 +8,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                // Example: copy files to a deployment directory
-                sh 'cp -r * /var/www/html/'  // Change this path as needed
+                // Copy files to macOS Apache web root directory
+                sh '''
+                  sudo cp -r * /Library/WebServer/Documents/
+                '''
             }
         }
     }
